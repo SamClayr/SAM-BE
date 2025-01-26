@@ -15,7 +15,7 @@
 
 .hero-section {
     position: relative;
-    height: 60vh;
+    height: 80vh;
     background-image: linear-gradient(to right, #243949 0%, #517fa4 100%), url('images/olympbg1.png');
     background-blend-mode: overlay;
     background-size: cover;
@@ -221,7 +221,7 @@ section h2::after {
 
 @media (max-width: 768px) {
     .hero-section {
-        height: 40vh;
+        height: 100vh;
     }
 
     .hero-section h1 {

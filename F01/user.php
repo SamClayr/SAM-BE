@@ -46,6 +46,9 @@ while ($row = mysqli_fetch_assoc($result)) {
                         <a class="nav-link" href="#videos">Videos</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
                         <a href="php/logout.php" class="nav-link">
                             <button class="btn btn-light btn-sm">
                                 <i class="fas fa-sign-out-alt me-2"></i>Logout
@@ -57,20 +60,20 @@ while ($row = mysqli_fetch_assoc($result)) {
         </div>
     </nav>
 
-    <header class="hero-section">
+    <section class="hero-section">
         <div class="overlay"></div>
         <div class="container text-center">
             <h1 data-aos="fade-up">Filipino Olympic Medalists</h1>
             <p data-aos="fade-up" data-aos-delay="200">Celebrating the Pride of the Philippines</p>
         </div>
-    </header>
+    </section>
 
     <section id="gallery" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4" data-aos="fade-up">Our Olympic Heroes</h2>
             <div class="row g-4 d-flex align-items-center justify-content-center">
                 <?php foreach ($athletes as $athlete): ?>
-                    <div class="col-md-4" data-aos="fade-up">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up">
                         <div class="card h-100">
                             <img src="assets/images/<?php echo $athlete['image']; ?>" class="card-img-top" alt="<?php echo $athlete['name']; ?>">
                             <div class="card-body">
@@ -165,14 +168,14 @@ while ($row = mysqli_fetch_assoc($result)) {
                             <i class="fas fa-map-marker-alt me-3"></i>
                             <div>
                                 <h5>Address</h5>
-                                <p>Philippine Sports Complex, RMSC, Pablo Ocampo Sr. St., Malate, Manila</p>
+                                <p>Polytechnic University of the Philippines - Sto. Tomas Campus, Sto. Tomas, Batangas</p>
                             </div>
                         </div>
                         <div class="info-item mb-4">
                             <i class="fas fa-phone me-3"></i>
                             <div>
                                 <h5>Phone</h5>
-                                <p>+63 (2) 8525-4605</p>
+                                <p>+63 912 345 6789</p>
                             </div>
                         </div>
                         <div class="info-item mb-4">
@@ -186,8 +189,8 @@ while ($row = mysqli_fetch_assoc($result)) {
                             <i class="fas fa-clock me-3"></i>
                             <div>
                                 <h5>Office Hours</h5>
-                                <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
-                                <p>Saturday - Sunday: Closed</p>
+                                <p>Monday - Saturday: 7:00 AM - 9:00 PM</p>
+                                <p>Sunday: Closed</p>
                             </div>
                         </div>
                     </div>
@@ -198,7 +201,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 
     <footer class="py-4">
         <div class="container text-center">
-            <p class="mb-0">&copy; 2024 Filipino Olympic Medalists. All rights reserved.</p>
+            <p class="mb-0">&copy; 2025 Olympinoy. All rights reserved.</p>
         </div>
     </footer>
 
